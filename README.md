@@ -1,1 +1,1 @@
-"# actiity-tracker" 
+"# activity-tracker" 
