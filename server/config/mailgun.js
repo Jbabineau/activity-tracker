@@ -1,3 +1,5 @@
+/*
+Commenting out as i dont think i will need this.
 const config = require('./main');
 const mailgun = require('mailgun-js')({ apiKey: config.mailgun_priv_key,
   domain: config.mailgun_domain });
@@ -28,3 +30,4 @@ exports.contactForm = function (sender, message) {
   //  console.log(body);
   });
 };
+*/

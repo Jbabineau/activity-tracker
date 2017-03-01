@@ -11,7 +11,7 @@ const config = require('../config/main');
 // TO-DO Add issuer and audience
 function generateToken(user) {
   return jwt.sign(user, config.secret, {
-    expiresIn: 604800 // in seconds
+    expiresIn: config.tokenTimeout
   });
 }
 
@@ -70,9 +70,6 @@ exports.register = function (req, res, next) {
 
     user.save((err, user) => {
       if (err) { return next(err); }
-
-        // Subscribe member to Mailchimp list
-        // mailchimp.subscribeToNewsletter(user.email);
 
         // Respond with JWT if user was created
 

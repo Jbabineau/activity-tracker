@@ -5,6 +5,8 @@ module.exports = {
   database: 'mongodb://localhost:27017',
   // Setting port for server
   port: 3000,
+  // Setting the timeout for the token in seconds
+  tokenTimeout: 3600,
   // Configuring Mailgun API for sending transactional email
   mailgun_priv_key: 'mailgun private key here',
   // Configuring Mailgun domain for sending transactional email
@@ -17,6 +19,6 @@ module.exports = {
   stripeApiKey: 'stripe api key goes here',
   // necessary in order to run tests in parallel of the main app
   test_port: 3001,
-  test_db: 'chronsistician',
+  test_db: 'activity-tracker',
   test_env: 'test'
 };

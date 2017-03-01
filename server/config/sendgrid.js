@@ -1,3 +1,5 @@
+/* 
+not sure i will need this commenting out.
 const config = require('./main');
 const helper = require('sendgrid').mail;
 
@@ -20,3 +22,4 @@ exports.sendEmail = function sendEmail(recipient, message) {
     console.log(response.headers);
   });
 };
+*/

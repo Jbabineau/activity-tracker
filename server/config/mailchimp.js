@@ -1,3 +1,5 @@
+/*
+commenting out because I do not believe I will need this.
 const config = require('./main');
 const mailchimp = require('mailchimp-v3');
 
@@ -20,3 +22,4 @@ exports.subscribeToNewsletter = function (email) {
     console.log('Mailchimp error.');
   });
 };
+*/
